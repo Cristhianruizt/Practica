@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Mi primera página </title>
+</head>
+
+<body>
+
+    <header>
+        <h1> Mi perfil profesional</h1>
+
+    </header>
+
+    <aside>
+        <h2 style="color: brown;">Datos adicionales</h2>
+        <p style="font-size: 12px;font-family: cursive;color: blueviolet;"">HTML semantico mejora la organización del código y facilita </p>
+
+    </aside>
+
+    <nav>
+        <a href=" ../../index.html">
+            Home
+            </a>
+
+            <a href="#objetivo">
+                Objetivo
+            </a>
+
+            <a href="#intereses">
+                intereses
+            </a>
+
+            <a href="/pages/contacto/contacto.html" target="_self">
+                Contacto
+            </a>
+            <a href="/pages/buscar/buscar.html">
+                Buscar
+            </a>
+            <a href="/pages/horario/horario.html">
+                Horario
+            </a>
+            <a href="/pages/multimedia/multimedia.html">
+                Multimedia
+            </a>
+            </nav>
+
+        <main id="inicio">
+            <h2 style="text-align: center; "> Sobre mí </h2>
+            <p style="background-color: bisque;"> Mi nombre es Cristhian Ruiz, Estoy aprendiendo HTML. </p>
+
+        </main>
+
+        <div id="objetivo">
+            <h2 style="background-color: aqua;"> Mis objetivos </h2>
+            <p> Quiero aprender a crear páginas web bien estructuradas, sin IA. </p>
+            <b style="color: rgb(190, 240, 88);"> Hola</b>
+            <b>Hola </b>
+            <i>Hola</i>
+            <u>Hola</u>
+            <h2></h2>
+            <strong>
+                Hola
+            </strong>
+            <em>Hola</em>
+
+        </div>
+
+        <div id="intereses">
+            <h2 style="background-color: aquamarine;">Mis intereses </h2>
+            <ul>
+                <li> Diseño Web</li>
+                <li>Programación </li>
+                <li>Tecnología</li>
+            </ul>
+        </div>
+
+        <div class="seccion3">
+            <h2 style="background-color: bisque;"> Pasos para estudiar HTML</h2>
+            <ol>
+                <li>Abrir el editor de código</li>
+                <li>Crear el archivo .html</li>
+                <li>Escribir etiquetas HTML</li>
+                <li> Guardar y abrir el navegador</li>
+            </ol>
+        </div>
+
+        <div id="contacto">
+            <h2>Mis redes sociales son:</h2>
+            <a href="https://www.youtube.com/" target="_blank"> Youtube </a>
+            <br> </br>
+        </div>
+
+        <div class="seccion5">
+            <h2> Trabajo en: </h2>
+            <figure>
+                <img src="img/espe.png" alt="Logo de la ESPE">
+                <figcaption> Universidad de las Fuerzas Armadas</figcaption>
+            </figure>
+        </div>
+
+        <div>
+            <h2> Video de presentación </h2>
+            <video src="video/videoejemplo.mp4" controls width="400" poster="img/espe.png" muted loop Tu navegador no
+                soporta video </video>
+        </div>
+
+        <section style="text-align: center;">
+            <iframe width="400" height="400" src="https://es.wikipedia.org/wiki/Wikipedia:Portadas"></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dIJs41d9sw4?si=c9Tf2JNPh9bZnCJ1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </section>
+
+        <div>
+            <h2>Audio de presentación </h2>
+            <audio src="audio/audio.mp3" controls loop </audio>
+        </div>
+
+        <section>
+            <h2> Publicaciones </h2>
+            <article>
+                <h3> ¿Por qué aprender HTML?</h3>
+                <p> HTML permite crear la estructura de una página web de forma ordenada.</p>
+            </article>
+            <article>
+                <h3> Importancia de la Semantica</h3>
+                <p> Las etiquetas semanticas ayudan a comprender mejor el contenido de una página.</p>
+            </article>
+
+        </section>
+
+        <div>
+            <h2> Horario de estudio</h2>
+            <table border="1">
+                <tr>
+                    <th>Día</th>
+                    <th> Actividad</th>
+
+                </tr>
+                <tr>
+                    <td> Lunes </td>
+                    <th> Práctica de HTML</th>
+                </tr>
+                <tr>
+                    <td> Martes </td>
+                    <th> Repasamos HTML</th>
+                </tr>
+                <tr>
+                    <td> Miercoles </td>
+                    <th> Evaluamos HTML</th>
+                </tr>
+                <tr>
+                    <td> Jueves </td>
+                    <th> Revisamos etiquetas de HTML</th>
+                </tr>
+                <tr>
+                    <td> Viernes </td>
+                    <th> Enviamos deber de HTML</th>
+                </tr>
+
+            </table>
+        </div>
+
+        <section class="formulario">
+            <h2> Formulario </h2>
+            <form method="GET" action="/pages/contacto/contacto.html">
+                <label for="tema"></label> Tema </label>
+                <input type="text" placeholder="escribe tu tema" required maxleng="9" minlength="3">
+
+                <label for="tema"></label> Correo </label>
+                <input type="email" id="tema" name="tema" required>
+                <button type="submit">
+                    Buscar
+                </button>
+            </form>
+        </section>
+
+        <section>
+            <form action="#" method="post">
+                <h2 style="color: blue;"> Registro de horario </h2>
+                <label for="Asignatura">Asignatura</label>
+                <select id="Asignatura" name="Asignatura" required>
+                    <option value="">---Seleccione una Asignatura--</option>
+                    <option value="Fundamentos de SistemasWeb">Fundamentos de SistemasWeb</option>
+                    <option value="Redes de Comunicacion">Redes de Comunicacion</option>
+                    <option value="Modelos Discretos">Modelos Discretos</option>
+                    <option value="Interfaces y Multimedia">Interfaces y Multimedia</option>
+                    >
+                </select>
+
+                <label for="Hora">Hora</label>
+                <input type="time" id="hora" min="08:00" max="16:00" step="1800" required>
+
+            </form>
+        </section>
+
+        <footer>
+            <p> Creado por Cristhian Ruiz. </p>
+            <p>Clase de Fundamentos Web - HTML Semántico</p>
+        </footer>
+
+</body>
+
+</html>
