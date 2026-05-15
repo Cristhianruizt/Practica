@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio Formularios - Cristhian Ruiz </title>
+</head>
+
+<body style="background-color:rgba(122, 207, 208, 0.61) ;">
+
+    <header>
+        <h1 style="text-align: center; color: rgb(250, 8, 8); font-family:cursive;">Central de Formularios HTML5 </h1>
+    </header>
+
+    <nav style="text-align: center;">
+        <a href="../../index.html">
+            Home
+        </a>
+        <a href="#objetivo">
+            Objetivo
+        </a>
+
+        <a href="#intereses">
+            intereses
+        </a>
+
+        <a href="/pages/contacto/contacto.html" target="_self">
+            Contacto
+        </a>
+
+        <a href="/pages/buscar/buscar.html">
+            Buscar
+        </a>
+
+        <a href="/pages/horario/horario.html">
+            Horario
+        </a>
+
+        <a href="/pages/multimedia/multimedia.html">
+            Multimedia
+        </a>
+
+        <a href="formulario.html">
+            Formulario
+        </a>
+    </nav>
+
+    <main>
+        <p style="text-align: center;">A continuación cada formulario solicitado .</p>
+
+        <section class="formulario" style="background-color: #e6f7ff; margin: 20px; text-align: center;">
+            <h2 style="color: brown; font-family: Arial, sans-serif;">1. Buscar Tema</h2>
+
+            <form action="/pages/buscar/buscar.html" method="GET">
+                <label for="busqueda_tema">¿Qué tema deseas investigar?</label>
+
+                <input type="text" id="busqueda_tema" name="tema_investigado" placeholder="Ej. AWS, Subnetting..."
+                    required minlength="3" maxlength="20">
+
+                <button type="submit" style="font-family: cursive; font-size: 16px; background-color:rgb(119, 171, 216);"><b>Buscar</b></button>
+            </form>
+            </form>
+        </section>
+
+        <section class="formulario" style="background-color: bisque; margin: 20px; text-align: center;">
+            <h2 style="color: green; font-family: 'Times New Roman', serif;">2. Asignatura</h2>
+            <form action="/pages/horario/horario.html" method="GET">
+                <label style="background-color: bisque;" for="especialidad">Elige tu ruta de estudio:</label>
+
+                <select id="especialidad" name="area_estudio" required>
+                    <option value="">--Slecciona una opción --</option>
+                    <option value="interfaces">Interfaces y Multimedia </option>
+                    <option value="redes_cisco">Redes de Comunicación </option>
+                    <option value="desarrollo_web">Fundamentos de Sistemas Web</option>
+                </select>
+
+                <br><br>
+                <button type="submit" style="background-color: rgb(243, 179, 95);"><b>Continuar</b></button>
+            </form>
+        </section>
+
+        <section class="formulario" style="background-color: rgb(97, 226, 183); margin: 20px;">
+            <h2 style="text-align: center;color: brown;">3. Tecnologías a Aprender</h2>
+
+            <form action="/pages/multimedia/multimedia.html" method="GET"; style="text-align: center;">
+                <p style="background-color: rgb(80, 203, 138); font-family: Arial, Helvetica, sans-serif;">Selecciona las
+                    tecnologías que manejas o deseas aprender:</p>
+
+                <input type="checkbox" id="tech1" name="interes[]" value="aws">
+                <label for="tech1">Amazon Web Services (AWS)</label><br>
+
+                <input type="checkbox" id="tech2" name="intereses[]" value="cisco">
+                <label for="tech2">Cisco Packet Tracer</label><br>
+
+                <input type="checkbox" id="tech3" name="intereses[]" value="vmware">
+                <label for="tech3">VMware Workstation</label><br>
+
+                <input type="checkbox" id="tech4" name="intereses[]" value="scilab">
+                <label for="tech4">Scilab / MATLAB</label><br><br>
+
+              
+                <button type="submit" style="background-color: aqua; font-family: cursive;"><b>Enviar Opciones</b></button>
+            </form>
+        </section>
+
+        <section class="formulario">
+            <h2 style="color: brown;">4. Agendar Tutoría Académica</h2>
+
+            <form action="/pages/horario/horario.html" method="GET">
+                <label style="background-color: bisque; font-family: Arial, sans-serif;" for="fecha_tutoria">Selecciona
+                    la fecha para la tutoría:</label><br><br>
+
+                <input type="date" id="fecha_tutoria" name="fecha_seleccionada" required>
+
+                <br><br>
+                <button type="submit">Confirmar Fecha</button>
+            </form>
+        </section>
+
+        <section class="formulario">
+            <h2 style="color: brown;">5. Registro para Novedades IT</h2>
+
+            <form action="/pages/contacto/contacto.html" method="GET">
+                <p style="background-color: bisque; font-family: Arial, sans-serif;">Regístrate para recibir información
+                    sobre certificaciones y laboratorios.</p>
+
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Cristhian Ruiz" required><br><br>
+
+                <label for="asunto">Tema de interés principal:</label><br>
+                <input type="text" id="asunto" name="asunto" placeholder="Ej. Prácticas en AWS o Cisco"
+                    required><br><br>
+
+                <label for="correo_contacto">Correo institucional:</label><br>
+                <input type="email" id="correo_contacto" name="correo" placeholder="usuario@espe.edu.ec"
+                    required><br><br>
+
+                <button type="submit">Registrarme</button>
+            </form>
+        </section>
+
+        <section class="formulario" style="background-color: #e6e6fa; margin: 20px; text-align: center;">
+            <h2 style="color: brown; font-family: Arial, Helvetica, sans-serif;">6. Login</h2>
+
+            <form action="../../index.html" method="POST">
+                <label for="usuario_login" style="font-size: 16px;">Correo:</label><br>
+                <input type="email" id="usuario_login" name="usuario" placeholder="correo@espe.edu.ec" required><br><br>
+
+                <label for="pass_login" style="font-size: 16px; color: darkred;">Contraseña:</label><br>
+                <input type="password" id="pass_login" name="password" placeholder="Contraseña" required minlength="8"
+                    maxlength="16" pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&.#_-])[A-Za-z\d@$!%*?&.#_-]{8,16}"
+                    title="Debe incluir letras, números y al menos un carácter especial.">
+                <br><br>
+
+                <button type="submit" style="font-size: 16px; font-weight: bold;">Entrar</button>
+            </form>
+        </section>
+
+
+
+
+    </main>
+
+    <footer>
+
+        <p>Creado por Cristhian Ruiz.</p>
+    </footer>
+
+</body>
+
+</html>

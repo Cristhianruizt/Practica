@@ -58,6 +58,60 @@
                 </form>
             </section>
 
+            <section class="formulario">
+                <h2>Encuesta </h2>
+                <form action="#" method="post" <fieldset>
+                    <legend style="background-color: bisque;">Intereses </legend>
+                    <input type="checkbox" id="int1" name="interes1" value="tecnologia">
+                    <label for="int1">Tecnología</label> <br>
+
+                    <input type="checkbox" id="int2" name="interes2" value="deportes">
+                    <label for="int2">Deportes</label> <br>
+
+                    <input type="checkbox" id="int3" name="interes3" value="politica">
+                    <label for="int3">Política</label> <br>
+
+                    <input type="checkbox" id="int4" name="interes3" value="economia">
+                    <label for="int4">Economia</label> <br>
+
+                    <input type="checkbox" id="int5" name="interes4" value="ciencia">
+                    <label for="int5">Ciencia</label> <br>
+
+                    </fieldset>
+
+                    <br>
+
+                    <fieldset>
+                        <legend style="color: blue;"> Frecuencia </legend>
+                        <input type="radio" id="frec1" name="frecuencia" value="diario" required>
+                        <label for="frec1">Diario</label> <br>
+
+                        <input type="radio" id="frec2" name="frecuencia" value="semanal" required>
+                        <label for="frec2">Semanal</label> <br>
+
+                    </fieldset>
+
+                    <br>
+                    <button type="submit"> Enviar </button>
+
+            </section>
+
+            <section>
+                <form>
+                    <label for="codigo">Código (3 letras y 2 números)</label>
+                    <input type="text" id="codigo" name="codigo" pattern="[A-Za-z] {3}[0-9]{2}"
+                        title="Tres letras seguidas de dos números" <button type="submit">Enviar</button>
+                    </button>
+
+                </form>
+
+
+
+
+            </section>
+
+
+
 </body>
 
 </html>
